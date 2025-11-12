@@ -19,16 +19,14 @@ public class Cheers {
             char currentLetter = S.charAt(i); 
             String article; 
             
-            // שינוי לוגיקת ה-article כדי שיכלול את הרווח/ים הנדרש/ים:
             if (SPECIALS.indexOf(currentLetter) != -1) {
-                // נדרש: רווח בודד אחרי 'an'
+                
                 article = "an ";
             } else {
-                // נדרש: שני רווחים אחרי 'a' ליישור (עבור 'a  U')
+                
                 article = "a  ";
             }
             
-            // הדפסה: מחברים את article מיד ל-currentLetter (הרווחים כבר כלולים ב-article)
             System.out.println("Give me " + article + currentLetter + ": " + currentLetter + "!");
         }
         
