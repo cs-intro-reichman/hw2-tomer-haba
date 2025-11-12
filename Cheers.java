@@ -20,14 +20,15 @@ public class Cheers {
             String article; 
             
             if (SPECIALS.indexOf(currentLetter) != -1) {
-                article = "an";
+               
+                article = "an ";
             } else {
-                article = "a";
+                
+                article = "a  ";
             }
             
-            System.out.println("Give me " + article + " " + currentLetter + ": " + currentLetter + "!");
+            System.out.println("Give me " + article + currentLetter + ": " + currentLetter + "!");
         }
-        
         System.out.println("What does that spell?"); 
 
         String cheerLine = S + "!!!"; 
